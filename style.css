@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --bkclr: rgba(50, 50, 50, 1);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: relative;
+    height: 10%;
+    /* 10vh */
+    width: 100%;
+    /* 100vw */
+    background-color: var(--bkclr);
+    /* border: 2px solid black; */
+}
+
+.edit-status {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 50%;
+    width: 15%;
+    /* background-color: red; */
+    position: absolute;
+    top: 25%;
+    right: 40%;
+}
+
+.edit-status>span {
+    font-weight: bold;
+    color: rgb(249, 18, 18);
+}
+
+.edit-bar {
+    top: 40%;
+    right: 36%;
+    position: absolute;
+    height: 20%;
+    width: 4%;
+    border-radius: 10%;
+    background-color: #aaa;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.edit-bubble {
+    top: 25%;
+    right: 38%;
+    transition-property: right;
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(99, 99, 99);
+    border-radius: 50%;
+}
+
+.save-the-edits {
+    position: absolute;
+    top: 42.1rem;
+    left: 80rem;
+    font-size: 1.8rem;
+    background-color:rgb(9, 195, 90);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.4rem;
+}
+
+.edit-select-menu {
+    position: absolute;
+    top: 1.2rem;
+    left: 25rem;
+    font-size: 1.5rem;
+    width: 15rem;
+}
+
+.delete-status {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 50%;
+    width: 15%;
+    /* background-color: red; */
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+
+.delete-status>span {
+    font-weight: bold;
+    color: rgb(249, 18, 18);
+}
+
+.delete-bar {
+    top: 40%;
+    right: 10%;
+    position: absolute;
+    height: 20%;
+    width: 4%;
+    border-radius: 10%;
+    background-color: #aaa;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.delete-bubble {
+    top: 25%;
+    right: 12%;
+    transition-property: right;
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(99, 99, 99);
+    border-radius: 50%;
+}
+
+.pack {
+    /* border: 2px solid red; */
+    height: 80%;
+    /* 80vh */
+    display: flex;
+}
+
+.sidebar {
+    height: 100%;
+    /* 80vh */
+    width: 20%;
+    /* 20vw */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bkclr);
+}
+
+.action-container {
+    height: 20%;
+    /* 10vh */
+    width: 35%;
+    /* 5vw */
+    background-color: rgb(100, 100, 100, 1);
+    border-radius: 0.2rem;
+    /* border: 2px solid red; */
+}
+
+.action-container>p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.filter-container {
+    height: 60%;
+    /* 48vh */
+    width: 75%;
+    /* 15vw */
+    background-color: rgb(100, 100, 100, 1);
+    border-radius: 0.2rem;
+}
+
+.filter {
+    height: 20%;
+    /* 9.6vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.filter-top {
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+.filter-bottom {
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
+
+.filter:hover {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+.filter>div {
+    height: 50%;
+    width: 70%;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.red-color-btn {
+    background-color: rgb(249, 18, 18);
+}
+
+.orange-color-btn {
+    background-color: rgb(238, 133, 13);
+}
+
+.green-color-btn {
+    background-color: rgb(9, 195, 90);
+}
+
+.black-color-btn {
+    background-color: rgb(0, 0, 0);
+}
+
+.show-all-btn {
+    background-color: rgb(23, 64, 140);
+}
+
+.filter>div>p {
+    color: rgb(255, 255, 255);
+}
+
+.action {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action>i {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+.action:hover {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+.grid {
+    /* position: relative;  */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 100%;
+    /* 80vh */
+    width: 80%;
+    /* 80vw */
+    /* border: 2px solid black; */
+    background-color: rgb(255, 255, 255);
+}
+
+.create-ticket {
+    display: flex;
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 95.5%;
+    height: 0%;
+    transition-property: height;
+    transition-duration: 0.5s;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.modal {
+    margin: auto;
+    margin-top: 9%;
+    height: 55%;
+    width: 45%;
+    background-color: rgb(219, 219, 219);
+    /* display: flex; */
+    /* border-radius: 0.3rem; */
+    box-shadow: 0rem 0rem 4rem 1rem rgb(0, 0, 0, 0.6);
+    overflow: auto;
+}
+
+.modal>div {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal>h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal label {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 14rem;
+    /* background-color: red; */
+}
+
+.modal select,
+input,
+textarea {
+    width: 15rem;
+    font-size: 1.2rem;
+}
+
+.ticket-type {
+    position: relative;
+}
+
+.ticket-priority {
+    position: relative;
+}
+
+.ticket-type>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.25rem;
+    right: -2.75rem;
+    height: 2.4rem;
+    width: 3rem;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-color: red; */
+}
+
+.ticket-type>span>i {
+    font-size: 2rem;
+}
+
+.ticket-priority>span {
+    position: absolute;
+    top: -0.12rem;
+    right: -3rem;
+    height: 2rem;
+    width: 3.5rem;
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.ticket-btn>button {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    width: 12rem;
+}
+
+/* ---------------------- This is for tickets ------------------------- */
+
+.ticket {
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+    margin: 2rem;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    /* align-items: center; */
+    height: 15rem;
+    width: 18rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 5px #aaa;
+    overflow-y: auto;
+}
+
+.ticket::-webkit-scrollbar {
+    display: none;
+}
+
+.ticket>.ticket-header {
+    display: inline-block;
+    width: 100%;
+    height: 2rem;
+    position: sticky;
+    top: 0rem;
+    left: 0rem;
+    z-index: 0;
+    /* background-color: black; */
+}
+
+.ticket>span:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    /* background-color: red;  */
+}
+
+.ticket>p {
+    /* background-color: red; */
+    /* margin-bottom: 0.8rem;
+    margin-top: 0.5rem; */
+    /* padding-left: 1rem; */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/* ---------------------- This is for tickets ------------------------- */
+
+.footer {
+    height: 10%;
+    /* 10vh */
+    /* border: 2px solid blue; */
+    background-color: var(--bkclr);
+}

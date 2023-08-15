@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Work Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+            <div class="edit-status">Edit Mode : <span>OFF</span></div>
+            <div class="edit-bar"></div>
+            <div class="edit-bubble"></div>
+
+            <div class="delete-status">Delete Mode : <span>OFF</span></div>
+            <div class="delete-bar"></div>
+            <div class="delete-bubble"></div>
+        </div>
+        <div class="pack">
+            <div class="sidebar">
+                <div class="action-container">
+                    <div class="action">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <p>Add Ticket</p>
+                </div>
+
+                <div class="filter-container">
+                    <div class="filter filter-top">
+                        <div class="red-color-btn">
+                            <p>High Priority</p>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="orange-color-btn">
+                            <p>Medium Priority</p>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="green-color-btn">
+                            <p>Moderate Priority</p>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="black-color-btn">
+                            <p>Low Priority</p>
+                        </div>
+                    </div>
+                    <div class="filter filter-bottom">
+                        <div class="show-all-btn">
+                            <p>Show All</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid"></div>
+        </div>
+
+        <div class="create-ticket">
+            <div class="modal">
+                <h1>Enter Ticket Details</h1>
+                <div class="ticket-name">
+                    <label for="ticket-name">Ticket Name : </label><input id="ticket-name" type="text"
+                        placeholder="Name of the ticket" required />
+                </div>
+                <div class="ticket-type">
+                    <label>Select Ticket Type : </label>
+                    <select>
+                        <option selected>--Set Type--</option>
+                        <option>Bug Fix</option>
+                        <option>Feature Implement</option>
+                        <option>Issue Fix</option>
+                        <option>New Project Development</option>
+                    </select>
+                    <span><i></i></span>
+                </div>
+                <div class="ticket-priority">
+                    <label>Select Ticket Priority : </label>
+                    <select>
+                        <option selected>--Set Priority--</option>
+                        <option>High Priority</option>
+                        <option>Medium Priority</option>
+                        <option>Moderate Priority</option>
+                        <option>Low Priority</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="ticket-desc">
+                    <label>Ticket Description : </label>
+                    <textarea rows="1" cols="40" placeholder="Ticket Description"></textarea>
+                </div>
+                <div class="ticket-btn">
+                    <button class="create-ticket-btn">Create Ticket</button>
+                    <button class="cancel-ticket-btn">Cancel Ticket</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            this is footer section
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -217,7 +217,12 @@ function deleteTheTicket() {
     if (deleteState == false) {
         if (isSearching == false) {
             deleteState = true;
-            deleteBubble.style.right = "9%";
+            if(window.innerWidth <= 425) {
+                deleteBubble.style.right = "3%";
+            }
+            else {
+                deleteBubble.style.right = "9%";
+            }
             deleteBar.style.backgroundColor = "rgb(9, 195, 90)";
             deleteStatus.style.color = "rgb(9, 195, 90)";
             deleteStatus.innerText = "ON";
@@ -246,7 +251,15 @@ function deleteTheTicket() {
     }
     else {
         deleteState = false;
-        deleteBubble.style.right = "12%";
+        if(window.innerWidth <= 425) {
+            deleteBubble.style.right = "10%";
+        }
+        else if(window.innerWidth <= 768){
+            deleteBubble.style.right = "15%";
+        }
+        else{
+            deleteBubble.style.right = "13%";
+        }
         deleteBar.style.backgroundColor = "#aaa";
         deleteStatus.style.color = "rgb(249, 18, 18)";
         deleteStatus.innerText = "OFF";
@@ -259,7 +272,19 @@ function editTheTicket() {
     if (editState == false) {
         if (isSearching == false) {
             editState = true;
-            editBubble.style.right = "35%";
+
+            if(window.innerWidth <= 425) {
+                editBubble.style.right = "51%";
+            }
+            else if(window.innerWidth <= 768){
+                editBubble.style.right = "39%";
+            }
+            else if(window.innerWidth <= 2560){
+                editBubble.style.right = "38%";
+            }
+            else{
+                editBubble.style.right = "35%";
+            }
             editBar.style.backgroundColor = "rgb(9, 195, 90)";
             editStatus.style.color = "rgb(9, 195, 90)";
             editStatus.innerText = "ON";
@@ -357,7 +382,19 @@ function editTheTicket() {
                 document.querySelector(".save-the-edits").remove();
                 localStorage.setItem("tasks", JSON.stringify(tasksBox));
                 editState = false;
-                editBubble.style.right = "38%";
+
+                if(window.innerWidth <= 425) {
+                    editBubble.style.right = "58%";
+                }
+                else if(window.innerWidth <= 768){
+                    editBubble.style.right = "45%";
+                }
+                else if(window.innerWidth <= 2560){
+                    editBubble.style.right = "42%";
+                }
+                else{
+                    editBubble.style.right = "35%";
+                }
                 editBar.style.backgroundColor = "#aaa";
                 editStatus.style.color = "rgb(249, 18, 18)";
                 editStatus.innerText = "OFF";
@@ -369,7 +406,19 @@ function editTheTicket() {
     }
     else {
         editState = false;
-        editBubble.style.right = "38%";
+
+        if (window.innerWidth <= 425) {
+            editBubble.style.right = "58%";
+        }
+        else if(window.innerWidth <= 768){
+            editBubble.style.right = "45%";
+        }
+        else if(window.innerWidth <= 2560){
+            editBubble.style.right = "42%";
+        }
+        else{
+            editBubble.style.right = "35%";
+        }
         editBar.style.backgroundColor = "#aaa";
         editStatus.style.color = "rgb(249, 18, 18)";
         editStatus.innerText = "OFF";

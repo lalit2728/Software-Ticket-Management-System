@@ -171,6 +171,25 @@
     color: rgb(255, 255, 255);
 }
 
+.action {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action>i {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+.action:hover {
+    background-color: rgba(80, 80, 80, 1);
+}
+
 .filter-container {
     height: 60%;
     /* 48vh */
@@ -236,25 +255,6 @@
 
 .filter>div>p {
     color: rgb(255, 255, 255);
-}
-
-.action {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.action>i {
-    color: rgb(255, 255, 255);
-    font-size: 4rem;
-    margin: auto;
-    /* background-color: yellow; */
-}
-
-.action:hover {
-    background-color: rgba(80, 80, 80, 1);
 }
 
 .grid {
@@ -425,4 +425,265 @@ textarea {
     /* 10vh */
     /* border: 2px solid blue; */
     background-color: var(--bkclr);
+}
+
+/* ---------------------- This is for responsiveness------------------- */
+
+@media (max-width: 2560px){
+    * {
+        font-size: 1.3rem;
+    }
+
+    .save-the-edits {
+        font-size: 2.5rem;
+        height: 5rem;
+        width: 20rem;
+        top: 54rem;
+        left: 100rem;
+    }
+
+    .action-container {
+        width: 55%;
+        height: 25%;
+    }
+
+    .action-container>p {
+        font-size: 2rem;
+    }
+
+    .action {
+        height: 70%;
+    }
+
+    .action>i {
+        font-size: 8rem;
+    }
+
+    .filter>div {
+        width: 90%;
+    }
+    
+    .filter>div>p {
+        font-size: 1.8rem;
+    }
+
+    .edit-status, .edit-status>span, .delete-status, .delete-status>span {
+        font-size: 2.5rem;
+    }
+
+    .edit-status {
+        right: 45%;
+    }
+
+    .edit-bar {
+        right: 39%;
+    }
+
+    .edit-bubble {
+        right: 42%;
+    }
+
+    .delete-status {
+        width: 18%;
+        right: 16%;
+    }
+
+    .delete-bubble {
+        right: 13%;
+    }
+}
+
+@media (max-width: 1440px){
+    * {
+        font-size: 1rem;
+    }
+
+    .save-the-edits {
+        font-size: 1.8rem;
+        height: 3rem;
+        width: 15rem;
+        top: 37.2rem;
+        left: 70rem;
+    }
+
+    .action-container {
+        width: 50%;
+        height: 25%;
+    }
+
+    .action-container>p {
+        font-size: 1.5rem;
+    }
+
+    .action>i {
+        font-size: 5rem;
+    }
+
+    .filter>div {
+        width: 80%;
+    }
+    
+    .filter>div>p {
+        font-size: 1.2rem;
+    }
+
+    .edit-status, .edit-status>span, .delete-status, .delete-status>span {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .save-the-edits {
+        font-size: 1.5rem;
+        height: 2.7rem;
+        width: 12rem;
+        top: 31.6rem;
+        left: 50rem;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+    
+    .grid {
+        width: 70%;
+    }
+
+    .action-container>p {
+        font-size: 1.1rem;
+    }
+
+    .action>i {
+        font-size: 4rem;
+    }
+
+    .filter>div {
+        height: 65%;
+        width: 80%;
+    }
+    
+    .filter>div>p {
+        font-size: 1.2rem;
+    }
+
+    .edit-status, .edit-status>span, .delete-status, .delete-status>span {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .filter>div>p {
+        font-size: 0.9rem;
+    }
+
+    .save-the-edits {
+        font-size: 1.5rem;
+        height: 2.5rem;
+        width: 12rem;
+        top: 31.7rem;
+        left: 34rem;
+    }
+
+    .edit-status {
+        right: 50%;
+    }
+
+    .edit-bar {
+        right: 42%;
+    }
+
+    .edit-bubble {
+        right: 45%;
+    }
+
+    .delete-status {
+        right: 20%;
+    }
+
+    .delete-bar {
+        right: 12%;
+    }
+
+    .delete-bubble {
+        right: 15.5%;
+    }
+
+    .edit-status, .edit-status>span, .delete-status, .delete-status>span {
+        font-size: 1rem;
+    }
+
+    .ticket {
+        margin: 1rem;
+        height: 10rem;
+        width: 12rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .filter>div>p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .action-container {
+        width: 80%;
+    }
+
+    .action-container>p {
+        font-size: 1rem;
+    }
+
+    .action>i {
+        font-size: 4rem;
+    }
+
+    .save-the-edits {
+        font-size: 1.2rem;
+        height: 2rem;
+        width: 10rem;
+        top: 32rem;
+        left: 15rem;
+    }
+
+    .edit-status {
+        width: 10rem;
+        right: 60%;
+    }
+
+    .edit-bar {
+        width: 2rem;
+        right: 53%;
+    }
+
+    .edit-bubble {
+        top: 30%;
+        height: 1.3rem;
+        width: 1.3rem;
+        right: 58%;
+    }
+
+    .delete-status {
+        width: 10rem;
+        right: 15%;
+    }
+
+    .delete-bar {
+        width: 2rem;
+        right: 5%;
+    }
+
+    .delete-bubble {
+        top: 30%;
+        height: 1.3rem;
+        width: 1.3rem;
+        right: 10%;
+    }
+
+    .edit-status, .edit-status>span, .delete-status, .delete-status>span {
+        /* background-color: red; */
+        font-size: 1rem;
+    }
 }
